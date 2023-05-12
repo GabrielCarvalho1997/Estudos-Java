@@ -40,7 +40,6 @@ public class Program {
 		System.out.println("Pagamento Total: " + String.format("%.2f", cr.getInvoice().getTotalPayment()));
 
 		sc.close();
-
 	}
 
 }
