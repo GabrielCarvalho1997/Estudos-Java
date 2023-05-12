@@ -1,6 +1,6 @@
 package ExInterface;
 
-public class BrasilTaxService {
+public class BrasilTaxService implements TaxService {
 
     public double tax(Double amount) {
         if (amount <= 100.0) {
@@ -8,6 +8,11 @@ public class BrasilTaxService {
         } else {
             return amount * 0.15;
         }
+    }
+
+    @Override
+    public double tax(double amount) {
+        throw new UnsupportedOperationException("Unimplemented method 'tax'");
     }
 
 }
