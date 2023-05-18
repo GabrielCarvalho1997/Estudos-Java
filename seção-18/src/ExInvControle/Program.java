@@ -26,7 +26,7 @@ public class Program {
         System.out.print("Entre com o número de parcelas: ");
         int n = sc.nextInt();
 
-        ContractService contractService = new ContractService(null);
+        ContractService contractService = new ContractService(new PaypalService());
 
         contractService.processContract(obj, n);
 

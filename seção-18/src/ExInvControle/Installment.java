@@ -11,7 +11,6 @@ public class Installment {
     private Double amount;
 
     public Installment() {
-
     }
 
     public Installment(LocalDate date, Double amount) {
